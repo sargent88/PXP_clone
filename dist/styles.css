@@ -1,0 +1,34 @@
+.fa {
+  padding-top: .4em;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid gray; }
+
+.fa-facebook {
+  background: black;
+  color: white; }
+
+.fa-instagram {
+  background: black;
+  color: white; }
+
+.fa-linkedin {
+  background: black;
+  color: white; }
+
+.fa-snapchat-ghost {
+  background: black;
+  color: white; }
+
+.fa-twitter {
+  background: black;
+  color: white; }
+
+.fa-youtube-play {
+  background: black;
+  color: white; }
+
+/*# sourceMappingURL=maps/styles.css.map */
