@@ -1,4 +1,45 @@
+.site-header {
+    width: 100vw;
+    height: auto;
+}
 
+.site-nav {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+.home-page, .about {
+    color: white;
+}
+
+.contact-search {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+
+.site-footer {
+    height: 30vh;
+    width: 100vw;
+    background-color: gray;
+}
+
+.magnifying-glass {
+    -webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg); 
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #8F0097;
+    border: 0px solid #8F0097;
+    color: white;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    text-align: center;
+}
 
 .fa {
     padding-top: .4em;
@@ -7,39 +48,26 @@
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    border: 1px solid gray;
+    border: 1px solid white;
 }
 
 // .fa:hover {
 //     opacity: 0.5;
 // }
 
-.fa-facebook {
-    background: black;
+.fa-facebook, .fa-instagram, .fa-linkedin, .fa-snapchat-ghost, .fa-twitter, .fa-youtube-play {
     color: white;
 }
 
-.fa-instagram {
-    background: black;
+.slogan {
     color: white;
 }
 
-.fa-linkedin {
-    background: black;
+.legal-sites {
     color: white;
 }
 
-.fa-snapchat-ghost {
-    background: black;
-    color: white;
-}
-
-.fa-twitter {
-    background: black;
-    color: white;
-}
-
-.fa-youtube-play {
-    background: black;
+a {
+    text-decoration: none;
     color: white;
 }

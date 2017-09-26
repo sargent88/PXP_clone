@@ -12,6 +12,7 @@
 <body class="PXP" ng-controller="mainCtrl">
     <header class="site-header" role="banner">
         <div class="top-container">
+            <img src="img/Hero Image@2x.png" alt="ultrasound">
             <nav class="site-nav">
                 <div class="home">
                     <a class="home-page" href="home">Home Page</a>
@@ -23,22 +24,17 @@
                     <a href="#"><button class="get-involved">Get Involved</button></a>
                     <a href="#"><button class="contact-us">Contact Us</button></a>
                     <form role="search">
-                            <div>
-                              <input type="search" id="mySearch" name="q">
-                              <button>&#9906</button>
-                            </div>
-                          </form>
+                        <div>
+                            <input type="search" id="mySearch" name="q"><button class="magnifying-glass">&#9906</button>
+                        </div>
+                    </form>
                 </div>
             </nav>
-
         </div>
-
     </header>
     
-    <main class="site-main" role="main">
-        
+    <main class="site-main" role="main">  
         <ui-view></ui-view>
-
     </main>
 
     <footer class="site-footer" role="footer">
@@ -46,13 +42,19 @@
             <nav class="logo-social">
                 <img src="" alt="Logo Goes Here">
                 <div class="links">
-                        <a class="fa fa-facebook fa-lg" href="#"></a>
-                        <a class="fa fa-instagram fa-lg" href="#"></a>
-                        <a class="fa fa-linkedin fa-lg" href="#"></a>
-                        <a class="fa fa-snapchat-ghost fa-lg" href="#"></a>
-                        <a class="fa fa-twitter fa-lg" href="#"></a>
-                        <a class="fa fa-youtube-play fa-lg" href="#"></a>
-                    </div>
+                    <a class="fa fa-facebook fa-lg" href="#"></a>
+                    <a class="fa fa-instagram fa-lg" href="#"></a>
+                    <a class="fa fa-linkedin fa-lg" href="#"></a>
+                    <a class="fa fa-snapchat-ghost fa-lg" href="#"></a>
+                    <a class="fa fa-twitter fa-lg" href="#"></a>
+                    <a class="fa fa-youtube-play fa-lg" href="#"></a>
+                </div>
+                <div class="slogan">
+                    <p>GE (NYSE: GE) imagines things other don’t, builds things others can’t, and delivers outcomes that make the world work better. GE brings together the physical and digital worlds in ways no other company can. In its labs and factories and on the ground with customers, GE is inventing the next industrial era to move, power, build and cure the world. <a href="www.ge.com">www.ge.com</a></p>
+                </div>
+                <div class="legal-sites">
+                    <p><a href="#">Privacy</a> | <a href="#">Cookie Policy</a> | <a href="#">Terms and Conditions</a> | <a href="#">GE Healthcare Website</a> | © 2017 General Electric Company</p>
+                </div>
             </nav>
         </div>
     </footer>
