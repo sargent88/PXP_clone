@@ -1,14 +1,18 @@
-<div class="articles">
+<h1>LATEST ARTICLE TITLE</h1>
+<button class="home-article-button">READ MORE</button>
+<div ng-repeat="article in articles" class="articles">
     <div class="a1">
-        <h2 class="title">Article Title</h2>
-        <p class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2 class="title">{{article.title}}</h2>
+        <p class="story">{{article.text}}</p>
+        <button class="read-more" id="read-big">READ MORE</button>
     </div>
     <div class="a2">
-        <img src="../img/article_1@2x.png" alt="3D Print">
+        <img ng-src="{{article.image}}" alt="article picture">
     </div>
-    <div class="b1">
+    <!-- <div class="b1">
         <h2 class="title">Article Title</h2>
         <p class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="read-more" id="read-big">READ MORE</button>
     </div>
     <div class="b2">
         <img src="../img/article_2@2x.png" alt="Mom and Baby">
@@ -16,6 +20,7 @@
     <div class="c1">
         <h2 class="title">Article Title</h2>
         <p class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="read-more" id="read-big">READ MORE</button>
     </div>
     <div class="c2">
         <img src="../img/article_3@2x.png" alt="Wierd toothbrush?">
@@ -23,8 +28,31 @@
     <div class="d1">
         <h2 class="title">Article Title</h2>
         <p class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="read-more" id="read-big">READ MORE</button>
     </div>
     <div class="d2">
         <img src="../img/article_4@2x.png" alt="Giant Earbuds?">
+    </div>     -->
+</div>
+<div class="story-break">
+    <button class="load-more">+</button>
+    <p>Load More</p>
+</div>
+<div class="home-links">
+    <div>
+        <img src="../img/about@2x.png" alt="info">
+        <h4>ABOUT US</h4>
+    </div>
+    <div>
+        <img src="../img/related@2x.png" alt="related links">
+        <h4>RELATED LINKS</h4>
+        <a id="relative-link" href="#">GE Healthcare Ultrasound</a>
+        <a id="relative-link" href="#">Voluson Innovations</a>
+        <a id="relative-link" href="#">VolusonClub benefits</a>
+    </div>
+    <div>
+        <img src="../img/world@2x.png" alt="globe more">
+        <h4>MORE</h4>
+        <a id="relative-link" href="#">Women's Health</a>
     </div>    
 </div>

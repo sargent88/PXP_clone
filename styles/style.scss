@@ -1,3 +1,7 @@
+button {
+    cursor:pointer;
+}
+
 .site-header {
     width: 100vw;
     height: auto;
@@ -25,20 +29,24 @@
     background-color: gray;
 }
 
+.search-button {
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #B500B5;
+    border: 0px solid #B500B5;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+}
+
 .magnifying-glass {
     -webkit-transform: rotate(-45deg); 
     -moz-transform: rotate(-45deg); 
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    border-radius: 50%;
-    text-decoration: none;
-    background-color: #8F0097;
-    border: 0px solid #8F0097;
     color: white;
-    width: 28px;
-    height: 28px;
-    font-size: 18px;
-    text-align: center;
 }
 
 .fa {
@@ -70,4 +78,8 @@
 a {
     text-decoration: none;
     color: white;
+}
+
+#relative-link {
+    color: lightgray;
 }
