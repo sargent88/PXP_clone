@@ -6,15 +6,15 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
         templateUrl: 'views/home.html',
         controller: 'homeCtrl'
     }).state('article', {
-        url: '/',
+        url: '/article',
         templateUrl: 'views/article.html',
         controller: 'articleCtrl'
     }).state('search', {
-        url: '/',
+        url: '/search',
         templateUrl: 'views/search.html',
         controller: 'searchCtrl'
     }).state('about', {
-        url: '/',
+        url: '/about',
         templateUrl: 'views/about.html',
         controller: 'aboutCtrl'
     });
@@ -28,16 +28,17 @@ angular.module('app').controller('articleCtrl', function ($scope, articleSrv) {
 });
 'use strict';
 
-angular.module('app').controller('homeCtrl', function ($scope, articleSrv) {
-    $scope.articles = articleSrv.getArticles();
+angular.module('app').controller('homeCtrl', function ($scope, homeSrv) {
+    $scope.articles = homeSrv.getArticles();
 });
 'use strict';
 
 angular.module('app').controller('mainCtrl', function ($scope) {});
 "use strict";
+"use strict";
 'use strict';
 
-angular.module('app').service('articleSrv', function () {
+angular.module('app').service('homeSrv', function () {
     var article = [{
         "id": 0,
         "title": "ARTICLE TITLE",

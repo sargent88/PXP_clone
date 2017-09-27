@@ -7,17 +7,17 @@ angular.module('app', ['ui.router'])
                 controller: 'homeCtrl'
             })
             .state('article', {
-                url: '/',
+                url: '/article',
                 templateUrl: 'views/article.html',
                 controller: 'articleCtrl'
             })
             .state('search', {
-                url: '/',
+                url: '/search',
                 templateUrl: 'views/search.html',
                 controller: 'searchCtrl'
             })
             .state('about', {
-                url: '/',
+                url: '/about',
                 templateUrl: 'views/about.html',
                 controller: 'aboutCtrl'
             })

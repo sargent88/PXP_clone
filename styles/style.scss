@@ -59,9 +59,10 @@ button {
     border: 1px solid white;
 }
 
-// .fa:hover {
-//     opacity: 0.5;
-// }
+.fa:hover {
+    color: gray;
+    background-color: white;
+}
 
 .fa-facebook, .fa-instagram, .fa-linkedin, .fa-snapchat-ghost, .fa-twitter, .fa-youtube-play {
     color: white;
