@@ -1,46 +1,42 @@
-<h1>ARTICLE TITLE</h1>
+<h1>{{story.title}}</h1>
 <div class="story-body">
     <section class="author-info">
-
+        <img class="profile-picture-story" ng-src="{{story.picture}}" alt="profile pic">
+        <h4 class="name-date">{{story.author}} | {{story.date}}</h4>
     </section>
     <section class="story-header">
-
+        <h2 class="story-intro">{{story.intro}}</h2>
     </section>
     <section class="actual-story" id="part1">
-
+        <p class="paragraph1">{{story.p1}}</p>
     </section>
     <section class="story-middle">
-
+        <img class="still-from-story" ng-src="{{story.still}}" alt="story topic">
+        <h2 class="middle-part-story">{{story.middle}}</h2>
     </section>
     <section class="actual-story" id="part2">
-
+        <p class="paragraph2">{{story.p2}}</p>
     </section>
     <section class="story-social-links">
-
+        <button class="fa fa-facebook" id="facebook-link-for-story" ng-href="{{story.facebook}}">Facebook</button>
+        <button class="fa fa-linkedin" id="linkedin-link-for-story" ng-href="{{story.linkedin}}">LinkedIn</button>
+        <button class="fa fa-twitter" id="twitter-link-for-story" ng-href="{{story.twitter}}">Twitter</button>
+        <button class="fa fa-envelope-o" id="email-link-for-story" ng-href="{{story.email}}">Email</button>
+        <button class="fa fa-plus" id="more-link-for-story" ng-href="{{story.more}}">More</button>
     </section>
 </div>
 <div class="recent-articles">
     <h3>RECENT ARTICLES</h3>
-    <ul>
-        <li>
-            <img src="" alt="recent article 1">
-            <h5 class="article-title-side"></h5>
-            <p class="article-overview-side"></p>
-            <button class="read-more" id="read-small">READ MORE</button>
-        </li>
-        <li>
-            <img src="" alt="recent article 2">
-            <h5 class="article-title-side"></h5>
-            <p class="article-overview-side"></p>
-            <button class="read-more" id="read-small">READ MORE</button>
-        </li>
-        <li>
-            <img src="" alt="recent article 3">
-            <h5 class="article-title-side"></h5>
-            <p class="article-overview-side"></p>
-            <button class="read-more" id="read-small">READ MORE</button>
-        </li>
-    </ul>
+    <div class="3-recent-articles" ng-repeat="xtraArticle in xtraArticles | limitTo:3">
+        <ul>
+            <li>
+                <img ng-src="{{xtraArticle.image}}" alt="recent article 1">
+                <h5 class="article-title-side">{{xtraArticle.title}}</h5>
+                <p class="article-overview-side">{{xtraArticle.synopsis}}</p>
+                <button class="read-more" id="read-small" ui-sref="article({id: xtraArticle.id})">READ MORE</button>
+            </li>
+        </ul>
+    </div>
     <button class="get-involved">GET INVOLVED</button>
 </div>
 <div class="story-footer">

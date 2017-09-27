@@ -7,7 +7,7 @@ angular.module('app', ['ui.router'])
                 controller: 'homeCtrl'
             })
             .state('article', {
-                url: '/article',
+                url: '/article/:id',
                 templateUrl: 'views/article.html',
                 controller: 'articleCtrl'
             })
