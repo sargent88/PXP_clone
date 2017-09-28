@@ -39,23 +39,11 @@
     </div>
     <button class="get-involved">GET INVOLVED</button>
 </div>
-<div class="story-footer">
+<div class="story-footer" ng-repeat="article in articles | limitTo:3:1">
     <div>
-        <img src="../img/article_3@2x.png" alt="Wierd toothbrush?">
-        <h2 class="title">Article Title</h2>
-        <p class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button class="read-more" id="read-big">READ MORE</button>
-    </div>
-    <div>
-        <img src="../img/article_1@2x.png" alt="3D Print">
-        <h2 class="title">Article Title</h2>
-        <p class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button class="read-more" id="read-big">READ MORE</button>
-    </div>
-    <div>
-        <img src="../img/article_4@2x.png" alt="Giant Earbuds?">
-        <h2 class="title">Article Title</h2>
-        <p class="story">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button class="read-more" id="read-big">READ MORE</button>
+        <img ng-src="{{article.image}}" alt="story image">
+        <h2 class="title">{{article.title}}</h2>
+        <p class="story">{{article.text}}</p>
+        <button class="read-more" id="read-big" ui-sref="article({id: article.id})">READ MORE</button>
     </div>
 </div>

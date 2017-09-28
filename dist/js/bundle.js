@@ -23,10 +23,12 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
 "use strict";
 'use strict';
 
-angular.module('app').controller('articleCtrl', function ($scope, articleSrv) {
+angular.module('app').controller('articleCtrl', function ($scope, articleSrv, homeSrv) {
     $scope.story = articleSrv.getStory();
 
     $scope.xtraArticles = articleSrv.getRecentArticles();
+
+    $scope.articles = homeSrv.getArticles();
 });
 'use strict';
 
@@ -38,7 +40,9 @@ angular.module('app').controller('homeCtrl', function ($scope, homeSrv, articleS
 });
 'use strict';
 
-angular.module('app').controller('mainCtrl', function ($scope) {});
+angular.module('app').controller('mainCtrl', function ($scope, $stateParams) {
+    console.log($stateParams);
+});
 "use strict";
 'use strict';
 
