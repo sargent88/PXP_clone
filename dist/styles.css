@@ -148,13 +148,65 @@ a {
 .logo {
   color: lightgray; }
 
-#relative-link {
-  color: lightgray; }
+h1 {
+  -webkit-text-stroke: 1.5px #7F0070;
+  -webkit-text-fill-color: white; }
+
+.home-article-title {
+  font-size: 56px; }
+
+.grid-for-articles {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; }
+
+.home-articles {
+  width: 50vw;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start; }
+
+.a1 {
+  width: 25vw;
+  padding: 5vw 2.5vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.title {
+  color: #7F0070;
+  font-size: 32px; }
+
+.story {
+  color: gray;
+  font-size: 16px;
+  line-height: 22.5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between; }
+
+.read-more {
+  color: #7F0070; }
+
+.a2 {
+  width: 25vw;
+  height: auto; }
 
 .story-break {
-  width: 100%;
+  width: 100vw;
   height: 12vh;
   background-color: #7F0070; }
+
+.extra-stories {
+  width: 12vw;
+  height: 12vh;
+  display: flex;
+  padding-left: 2.5vw;
+  align-items: center;
+  justify-content: space-around; }
 
 .load-more-btn {
   border-radius: 50%;
@@ -170,6 +222,53 @@ a {
 
 .load-more {
   color: white;
-  text-transform: uppercase; }
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-right: 1vw; }
+
+.home-footer-links {
+  width: 100vw;
+  height: 45vh; }
+
+.home-links {
+  height: 45vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.home-about, .home-related, .home-more {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.img-title-contain {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 18vh; }
+
+.link-contain {
+  width: 15vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.home-footer-title {
+  color: #7F0070;
+  font-size: 24px; }
+
+.home-related {
+  width: 33.33vw;
+  border-left: .5px solid lightgray;
+  border-right: .5px solid lightgray; }
+
+#relative-link {
+  color: lightgray; }
 
 /*# sourceMappingURL=maps/styles.css.map */

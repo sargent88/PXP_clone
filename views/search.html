@@ -1,5 +1,6 @@
 <h1>SEARCH RESULTS FOR: {{}}</h1>
-<div ng-repeat="article in articles" class="articles">
+<nav class="grid-for-articles">
+    <div ng-repeat="article in articles | limitTo:4" class="articles">
         <div class="a1">
             <h2 class="title">{{article.title}}</h2>
             <p class="story">{{article.text}}</p>
@@ -9,7 +10,10 @@
             <img ng-src="{{article.image}}" alt="article picture">
         </div>
     </div>
-    <div class="story-break">
+</nav>
+<nav class="story-break">
+    <div class="extra-stories">
         <button class="load-more">+</button>
         <p class="load-more">Load More</p>
     </div>
+</nav>

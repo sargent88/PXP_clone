@@ -1,34 +1,53 @@
-<h1>LATEST ARTICLE TITLE</h1>
+<h1 class="home-article-title">LATEST ARTICLE TITLE</h1>
 <button class="home-article-button" ui-sref="article({id: story.id})">READ MORE</button>
-<div ng-repeat="article in articles" class="articles">
-    <div class="a1">
-        <h2 class="title">{{article.title}}</h2>
-        <p class="story">{{article.text}}</p>
-        <button class="read-more" id="read-big">READ MORE</button>
+<nav class="grid-for-articles">
+    <div ng-repeat="article in articles | limitTo:4" class="home-articles">
+        <div class="a1">
+            <h2 class="title">{{article.title}}</h2>
+            <p class="story">{{article.text}}</p>
+            <button class="read-more" id="read-big">READ MORE</button>
+        </div>
+        <div class="a2">
+            <img ng-src="{{article.image}}" alt="article picture">
+        </div>
     </div>
-    <div class="a2">
-        <img ng-src="{{article.image}}" alt="article picture">
+</nav>
+<nav class="story-break">
+    <div class="extra-stories">
+        <button class="load-more-btn"><strong>+</strong></button>
+        <p class="load-more">Load More</p>
     </div>
-</div>
-<div class="story-break">
-    <button class="load-more-btn"><strong>+</strong></button>
-    <p class="load-more">Load More</p>
-</div>
-<div class="home-links">
-    <div class="home-about">
-        <img src="../img/about@2x.png" alt="info">
-        <h4 class="home-footer-title">ABOUT US</h4>
+</nav>
+<nav class="home-footer-links">
+    <div class="home-links">
+        <div class="home-about">
+            <div class="img-title-contain">
+                <img class="home-footer-image" src="../img/about@2x.png" alt="info">
+                <h4 class="home-footer-title">ABOUT US</h4>
+            </div>
+            <div class="link-contain">
+                <a id="relative-link" href="#"></a>
+            </div>
+        </div>
+        <div class="home-related">
+            <div class="img-title-contain">
+                <img class="home-footer-image" src="../img/related@2x.png" alt="related links">
+                <h4 class="home-footer-title">RELATED LINKS</h4>
+            </div>
+            <div class="link-contain">
+                <a id="relative-link" href="#">GE Healthcare Ultrasound</a>
+                <a id="relative-link" href="#">Voluson Innovations</a>
+                <a id="relative-link" href="#">VolusonClub benefits</a>
+            </div>
+        </div>
+        <div class="home-more">
+            <div class="img-title-contain">
+                <img class="home-footer-image" src="../img/world@2x.png" alt="globe more">
+                <h4 class="home-footer-title">MORE</h4>
+            </div>
+            <div class="link-contain">
+                <a id="relative-link" href="#">Women's Health</a>
+            </div>
+        </div>    
     </div>
-    <div class="home-related">
-        <img src="../img/related@2x.png" alt="related links">
-        <h4 class="home-footer-title">RELATED LINKS</h4>
-        <a id="relative-link" href="#">GE Healthcare Ultrasound</a>
-        <a id="relative-link" href="#">Voluson Innovations</a>
-        <a id="relative-link" href="#">VolusonClub benefits</a>
-    </div>
-    <div class="home-more">
-        <img src="../img/world@2x.png" alt="globe more">
-        <h4 class="home-footer-title">MORE</h4>
-        <a id="relative-link" href="#">Women's Health</a>
-    </div>    
-</div>
+</nav>
