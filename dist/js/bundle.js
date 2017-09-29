@@ -21,35 +21,6 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
     });
     $urlRouterProvider.otherwise('/');
 });
-"use strict";
-'use strict';
-
-angular.module('app').controller('articleCtrl', function ($scope, articleSrv, homeSrv) {
-    $scope.story = articleSrv.getStory();
-
-    $scope.xtraArticles = articleSrv.getRecentArticles();
-
-    $scope.articles = homeSrv.getArticles();
-});
-'use strict';
-
-angular.module('app').controller('homeCtrl', function ($scope, homeSrv, articleSrv) {
-    $scope.articles = homeSrv.getArticles();
-
-    $scope.story = articleSrv.getStory();
-    // console.log($scope.story.id)
-});
-'use strict';
-
-angular.module('app').controller('mainCtrl', function ($scope, $stateParams) {
-    console.log($stateParams);
-});
-'use strict';
-
-angular.module('app').controller('searchCtrl', function ($scope, homeSrv) {
-
-    $scope.articles = homeSrv.getArticles();
-});
 'use strict';
 
 angular.module('app').service('articleSrv', function () {
@@ -124,5 +95,34 @@ angular.module('app').service('homeSrv', function () {
     this.getArticles = function () {
         return article;
     };
+});
+"use strict";
+'use strict';
+
+angular.module('app').controller('articleCtrl', function ($scope, articleSrv, homeSrv) {
+    $scope.story = articleSrv.getStory();
+
+    $scope.xtraArticles = articleSrv.getRecentArticles();
+
+    $scope.articles = homeSrv.getArticles();
+});
+'use strict';
+
+angular.module('app').controller('homeCtrl', function ($scope, homeSrv, articleSrv) {
+    $scope.articles = homeSrv.getArticles();
+
+    $scope.story = articleSrv.getStory();
+    // console.log($scope.story.id)
+});
+'use strict';
+
+angular.module('app').controller('mainCtrl', function ($scope, $stateParams) {
+    console.log($stateParams);
+});
+'use strict';
+
+angular.module('app').controller('searchCtrl', function ($scope, homeSrv) {
+
+    $scope.articles = homeSrv.getArticles();
 });
 //# sourceMappingURL=bundle.js.map

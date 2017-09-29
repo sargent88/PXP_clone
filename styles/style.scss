@@ -57,7 +57,7 @@ a {
 }
 
 .contact-search {
-    width: 30vw;
+    width: 425px;
 }
 
 .get-involved, .contact-us {
@@ -116,9 +116,36 @@ a {
 
 //footer css//
 .site-footer {
-    height: 30vh;
+    height: 25vh;
     width: 100vw;
     background-color: gray;
+}
+
+.bottom-container {
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 4vh;
+}
+
+.logo-social {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.legal-slogan {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+    width: 75vw;
+    padding-left: -12.5vw;
 }
 
 .fa {
@@ -142,10 +169,15 @@ a {
 
 .slogan {
     color: white;
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .legal-sites {
     color: white;
+    font-size: 13px;
 }
 
 .logo {
