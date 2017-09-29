@@ -152,8 +152,31 @@ h1 {
   -webkit-text-stroke: 1.5px #7F0070;
   -webkit-text-fill-color: white; }
 
+.title-contain {
+  width: 100vw;
+  height: 25vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 35vh; }
+
+#shift-title-left {
+  left: -300px; }
+
 .home-article-title {
   font-size: 56px; }
+
+.custom-article-title {
+  font-size: 78px; }
+
+.home-article-button {
+  color: #7F0070;
+  font-size: 16px;
+  height: 40px;
+  width: 140px; }
 
 .grid-for-articles {
   width: 100vw;
@@ -269,6 +292,29 @@ h1 {
   border-right: .5px solid lightgray; }
 
 #relative-link {
-  color: lightgray; }
+  color: gray; }
+
+.body-article-contain {
+  display: flex;
+  flex-direction: column;
+  width: 100vw; }
+
+.top-section-article {
+  display: flex;
+  width: 100vw; }
+
+.about-us {
+  height: 82.5vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2.5vh 7.5vw; }
+
+.about-paragraph {
+  color: gray;
+  line-height: 1.5; }
 
 /*# sourceMappingURL=maps/styles.css.map */

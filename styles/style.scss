@@ -190,8 +190,40 @@ h1 {
     -webkit-text-fill-color: white;
 }
 
+// .move-upwards {
+//     position: absolute;
+//     top: -25vh;
+// }
+
+.title-contain {
+    width: 100vw;
+    height: 25vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 35vh;
+}
+
+#shift-title-left{
+    left: -300px;
+}
+
 .home-article-title {
     font-size: 56px;
+}
+
+.custom-article-title {
+    font-size: 78px;
+}
+
+.home-article-button {
+    color: $titles;
+    font-size: 16px;
+    height: 40px;
+    width: 140px;
 }
 
 .grid-for-articles {
@@ -329,5 +361,33 @@ h1 {
 }
 
 #relative-link {
-    color: lightgray;
+    color: gray;
+}
+
+.body-article-contain {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.top-section-article {
+    display: flex;
+    width: 100vw;
+    
+}
+
+.about-us {
+    height: 82.5vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2.5vh 7.5vw;
+}
+
+.about-paragraph {
+    color: gray;
+    line-height: 1.5;
 }
