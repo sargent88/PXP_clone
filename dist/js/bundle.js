@@ -10,7 +10,8 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
         templateUrl: 'views/article.html',
         controller: 'articleCtrl'
     }).state('search', {
-        url: '/search',
+        url: '/search?title',
+        //this will need to be a ?query to pull in the info//
         templateUrl: 'views/search.html',
         controller: 'searchCtrl'
     }).state('about', {
@@ -36,14 +37,19 @@ angular.module('app').controller('homeCtrl', function ($scope, homeSrv, articleS
     $scope.articles = homeSrv.getArticles();
 
     $scope.story = articleSrv.getStory();
-    console.log($scope.story.id);
+    // console.log($scope.story.id)
 });
 'use strict';
 
 angular.module('app').controller('mainCtrl', function ($scope, $stateParams) {
     console.log($stateParams);
 });
-"use strict";
+'use strict';
+
+angular.module('app').controller('searchCtrl', function ($scope, homeSrv) {
+
+    $scope.articles = homeSrv.getArticles();
+});
 'use strict';
 
 angular.module('app').service('articleSrv', function () {

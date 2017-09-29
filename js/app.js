@@ -12,7 +12,8 @@ angular.module('app', ['ui.router'])
                 controller: 'articleCtrl'
             })
             .state('search', {
-                url: '/search',
+                url: '/search?title', 
+                //this will need to be a ?query to pull in the info//
                 templateUrl: 'views/search.html',
                 controller: 'searchCtrl'
             })

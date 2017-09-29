@@ -2,6 +2,6 @@ angular.module('app').controller('homeCtrl', function($scope, homeSrv, articleSr
     $scope.articles = homeSrv.getArticles();
 
     $scope.story = articleSrv.getStory();
-    console.log($scope.story.id)
+    // console.log($scope.story.id)
     
 })

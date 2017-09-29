@@ -1,44 +1,102 @@
-button {
-    cursor:pointer;
+//global variables//
+$titles: #7F0070;
+$gradient1: #7400B2;
+$gradient2: #D000B6;
+$gradient3: #600091;
+$gradient4: #77006E;
+$font: Arial, Helvetica, sans-serif;
+
+//global constants//
+html {
+    font-family: $font;
 }
 
-.site-header {
+button {
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, $gradient1 0%, $gradient2 100%);
+    border-image-slice: 1;
+    background: transparent;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+//header css//
+.header-image {
+    position: relative;
     width: 100vw;
     height: auto;
 }
-
-.site-nav {
+.top-container {
     position: absolute;
-    top: 2%;
-    left: 5%;
+    top: 2vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+}
+
+.home {
+    width: 17vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-page {
+    display: flex;
+    padding-left: 5vw;
 }
 
 .home-page, .about {
     color: white;
+    font-size: 12px;
 }
 
 .contact-search {
-    position: absolute;
-    top: 2%;
-    right: 5%;
+    width: 30vw;
 }
 
-.site-footer {
-    height: 30vh;
-    width: 100vw;
-    background-color: gray;
+.get-involved, .contact-us {
+    background: linear-gradient($gradient3, $gradient4);;
+    color: white;
+    border: 0px solid;
+    text-transform: uppercase;
+    font-size: 11px
+}
+
+.get-involved {
+    height: 23px;
+    width: 120px;
+}
+
+.contact-us {
+    height: 23px;
+    width: 100px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 2vw;
 }
 
 .search-button {
     border-radius: 50%;
     text-decoration: none;
-    background-color: #B500B5;
-    border: 0px solid #B500B5;
-    width: 28px;
-    height: 28px;
-    font-size: 18px;
+    background: linear-gradient(to right, $gradient1, $gradient2);
+    border: 0px solid;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
     text-align: center;
     outline: none;
+    position: relative;
+    left: -15px;
 }
 
 .magnifying-glass {
@@ -47,6 +105,20 @@ button {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     color: white;
+}
+
+#story-search {
+    border-radius: 50px;
+    border: 0px solid;
+    width: 120px;
+    height: 17px;
+}
+
+//footer css//
+.site-footer {
+    height: 30vh;
+    width: 100vw;
+    background-color: gray;
 }
 
 .fa {
@@ -76,11 +148,37 @@ button {
     color: white;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.logo {
+    color: lightgray;
 }
 
+//main body css//
 #relative-link {
     color: lightgray;
 }
+
+.story-break {
+    width: 100%;
+    height: 12vh;
+    background-color: $titles;
+}
+
+.load-more-btn {
+    border-radius: 50%;
+    text-decoration: none;
+    border: 0px solid;
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+    text-align: center;
+    outline: none;
+    color: $titles;
+    background-color: white;
+}
+
+.load-more {
+    color: white;
+    text-transform: uppercase;
+}
+
+
